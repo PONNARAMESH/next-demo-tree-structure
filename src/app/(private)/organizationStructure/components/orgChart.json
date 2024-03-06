@@ -1,0 +1,88 @@
+{
+    "name": "ABC Compnay",
+    "attributes": {
+      "age": "67"
+    },
+    "children": [
+      {
+        "name": "Nancy Rose Compnay",
+        "attributes": {
+          "age": "34"
+        },
+        "children": [
+          {
+            "name": "Mick Rose Compnay",
+            "attributes": {
+              "age": "34"
+            }
+          },
+          {
+            "name": "Heath Rose Compnay",
+            "attributes": {
+              "age": "25"
+            }
+          },
+          {
+            "name": "Roger Rose Compnay",
+            "attributes": {
+              "age": "21"
+            },
+            "children": [
+              {
+                "name": "Devnarayan Compnay",
+                "attributes": {
+                  "age": "34"
+                }
+              },
+              {
+                "name": "sufiyan Compnay",
+                "attributes": {
+                  "age": "25"
+                }
+              },
+              {
+                "name": "aishwariya Compnay",
+                "attributes": {
+                  "age": "21"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heath Compnay",
+        "attributes": {
+          "age": "25"
+        },
+        "children": []
+      },
+      {
+        "name": "Roger Compnay",
+        "attributes": {
+          "age": "21"
+        },
+        "children": [
+          {
+            "name": "Nancy Compnay",
+            "attributes": {
+              "age": "34"
+            }
+          },
+          {
+            "name": "Antony Rose Compnay",
+            "attributes": {
+              "age": "25"
+            }
+          },
+          {
+            "name": "Jimmy Rose Compnay",
+            "attributes": {
+              "age": "21"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
