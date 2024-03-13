@@ -6,13 +6,16 @@ const Tree = dynamic(
     { ssr: false }
 );
 
-import orgChartJson from "./components/orgChart.json";
+// import orgChartJson from "./components/orgChart.json";
 import { useCenteredTree } from "./hooks/useCenteredTree";
 import { createCustomNodeElement } from "./components/createCustomNodeElement"
 import { LegacyRef, useState } from "react";
 import "./pageStyles.css";
 import { Tooltip } from "antd";
 import { MinusSquareFilled, PlusSquareFilled } from "@ant-design/icons";
+
+import {organizationInfo} from "./components/dummyData";
+import { prepareJsonForNestedRelation } from "./utils";
 
 export default function OrganizationStructure(props: any) {
 
@@ -29,6 +32,16 @@ export default function OrganizationStructure(props: any) {
         height: nodeSize.y,
         x: -130,
     };
+
+    const orgChartJson: any[] = prepareJsonForNestedRelation(organizationInfo?.ownershipStructureList || [], "Abhilash M", "belongsTo.name");
+    
+    if(!orgChartJson || !orgChartJson?.length) {
+        return(
+            <h1 className="emptyData"> Data is not available (or) root node was not found</h1>
+            )
+        }
+
+
     return (
 
         <div
